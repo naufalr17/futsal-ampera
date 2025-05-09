@@ -17,9 +17,9 @@
 			<hr>
 			<form action="<?php echo base_url('cart/checkout') ?>" method="post">
 				<div class="row">
-					<div class="col-lg-12"><?php if ($this->session->flashdata('message')) {
-																		echo $this->session->flashdata('message');
-																	} ?>
+					<div class="col-lg-12 red-background"><?php if ($this->session->flashdata('message')) {
+												echo $this->session->flashdata('message');
+											} ?>
 						<div class="box-body table-responsive padding">
 							<table id="datatable" class="table table-striped table-bordered">
 								<thead>

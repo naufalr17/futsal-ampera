@@ -53,16 +53,16 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['about']       = 'page/about';
-$route['contact']     = 'page/contact';
-$route['send']        = 'page/send';
+// $route['about']       = 'page/about';
+// $route['contact']     = 'page/contact';
+// $route['send']        = 'page/send';
 
-$route['event']           = 'event/archive';
-$route['gallery/album']   = 'gallery/album';
-$route['gallery/video']   = 'gallery/video';
+// $route['event']           = 'event/archive';
+// $route['gallery/album']   = 'gallery/album';
+// $route['gallery/video']   = 'gallery/video';
 
 $route['portfolio/(:any)']  = 'portfolio/read/$1';
 $route['project/(:any)']    = 'project/read/$1';
-$route['event/(:any)']      = 'event/read/$1';
+// $route['event/(:any)']      = 'event/read/$1';
 
-$route['gallery/(:any)']    = 'gallery/read/$1';
+// $route['gallery/(:any)']    = 'gallery/read/$1';

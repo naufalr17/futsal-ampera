@@ -1,4 +1,4 @@
-<hr><h3 align="center"><b>LAPANGAN KAMI</b></h3><hr>
+<hr><p class="raleway-cover-bold-h2" align="center">BOOKING VENUE</p><hr>
 <div class="row">
   <?php foreach($lapangan_new as $lapangan){ ?>
     <div class="col-lg-4">

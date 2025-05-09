@@ -1,15 +1,27 @@
 <script src="<?php echo base_url('assets/plugins/slider/src/')?>slippry.js"></script>
 <link rel="stylesheet" href="<?php echo base_url('assets/plugins/slider/dist/')?>slippry.css" />
 <div class="big-title" data-animation="fadeInDown" data-animation-delay="02">
-  <ul id="thumbnails">
+  <!-- <ul id="thumbnails">
     <?php foreach($slider_data as $slider){ ?>
     <li>
       <a href="<?php echo $slider->link ?>" target="_self">
-        <img src="<?php echo base_url('assets/images/slider/').$slider->foto.$slider->foto_type?>" alt="<?php echo $slider->nama_slider ?>">
+        <img src="<?php //echo base_url('assets/images/slider/').$slider->foto.$slider->foto_type?>" alt="<?php echo $slider->nama_slider ?>">
       </a>
     </li>
     <?php } ?>
-  </ul>
+  </ul> -->
+        <div class="cover-bg">
+          <div class="body plus-jakarta-sans-present">
+            Kemenkes Poltekkes Semarang Present
+          </div>
+          <div class="body raleway-cover-bold">
+            CREATIVE SPACE
+          </div>
+          <div class="body raleway-cover-bold-caption">
+            Innovative, Collaborate, Elevate!
+          </div>
+        </div>
+      
 </div>
 
 <script type="text/javascript">

@@ -61,13 +61,13 @@
           <li <?php if($this->uri->segment(2) == "kategori" && $this->uri->segment(3) == ""){echo "class='active'";} ?>><a href='<?php echo base_url('admin/kategori') ?>'><i class='fa fa-circle-o'></i> Data Kategori </a></li>
         </ul>
       </li>
-      <li <?php if($this->uri->segment(2) == "slider"){echo "class='active'";} ?>>
+      <!-- <li <?php if($this->uri->segment(2) == "slider"){echo "class='active'";} ?>>
         <a href='#'><i class='fa fa-credit-card'></i><span> Slider </span><i class='fa fa-angle-left pull-right'></i></a>
         <ul class='treeview-menu'>
           <li <?php if($this->uri->segment(2) == "slider" && $this->uri->segment(3) == "create"){echo "class='active'";} ?>><a href='<?php echo base_url('admin/slider/create') ?>'><i class='fa fa-circle-o'></i> Tambah Slider </a></li>
           <li <?php if($this->uri->segment(2) == "slider" && $this->uri->segment(3) == ""){echo "class='active'";} ?>><a href='<?php echo base_url('admin/slider') ?>'><i class='fa fa-circle-o'></i> Data Slider </a></li>
         </ul>
-      </li>
+      </li> -->
       <li <?php if($this->uri->segment(2) == "kontak"){echo "class='active'";} ?>>
         <a href='#'><i class='fa fa-phone'></i><span> Kontak </span><i class='fa fa-angle-left pull-right'></i></a>
         <ul class='treeview-menu'>
