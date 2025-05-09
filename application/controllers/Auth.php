@@ -155,25 +155,25 @@ class Auth extends CI_Controller {
 		if($this->ion_auth->logged_in()){redirect(base_url());}
 
 		// panggil library recaptcha
-		$this->load->library('Recaptcha');
+		// $this->load->library('Recaptcha');
 
 		// siapkan data recaptcha
-		$this->data['captcha'] = $this->recaptcha->getWidget();
-		$this->data['script_captcha'] = $this->recaptcha->getScriptTag();
-		$recaptcha 	= $this->input->post('g-recaptcha-response');
-    $response 	= $this->recaptcha->verifyResponse($recaptcha);
+		// $this->data['captcha'] = $this->recaptcha->getWidget();
+		// $this->data['script_captcha'] = $this->recaptcha->getScriptTag();
+		// $recaptcha 	= $this->input->post('g-recaptcha-response');
+    // $response 	= $this->recaptcha->verifyResponse($recaptcha);
 
 		//validate form input
 		$this->form_validation->set_rules('identity', 'Identity', 'callback_identity_check');
 		$this->form_validation->set_rules('password', str_replace(':', '', $this->lang->line('login_password_label')), 'required');
-		$this->form_validation->set_rules('g-recaptcha-response', 'Captcha', 'required');
+		// $this->form_validation->set_rules('g-recaptcha-response', 'Captcha', 'required');
 		$this->form_validation->set_message('required', '{field} mohon diisi');
 
 		// jika form_validation gagal dijalankan dan response recaptcha juga gagal maka akan diarahkan kembali ke halaman login
-		// if ($this->form_validation->run() == FALSE)
-		// {
-		if ($this->form_validation->run() == FALSE || !isset($response['success']) || $response['success'] <> TRUE)
+		if ($this->form_validation->run() == FALSE)
 		{
+		// if ($this->form_validation->run() == FALSE || !isset($response['success']) || $response['success'] <> TRUE)
+		// {
 			// set pesan error dari ion_auth
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
