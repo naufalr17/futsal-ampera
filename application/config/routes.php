@@ -54,7 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // $route['about']       = 'page/about';
-// $route['contact']     = 'page/contact';
+$route['contact']     = 'page/contact';
 // $route['send']        = 'page/send';
 
 // $route['event']           = 'event/archive';
@@ -63,6 +63,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['portfolio/(:any)']  = 'portfolio/read/$1';
 $route['project/(:any)']    = 'project/read/$1';
+$route['jadwal/get_events'] = 'jadwal/get_events';
 // $route['event/(:any)']      = 'event/read/$1';
 
 // $route['gallery/(:any)']    = 'gallery/read/$1';

@@ -9,7 +9,8 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="<?php echo base_url() ?>">
-        <img src="<?php echo base_url('assets/images/company/').$company_data->foto.$company_data->foto_type ?>" alt="<?php echo $company_data->company_name ?>" width="100px">
+        <!-- <img src="<?php echo base_url('assets/images/company/').$company_data->foto.$company_data->foto_type ?>" alt="<?php echo $company_data->company_name ?>" width="100px"> -->
+        <p class="raleway-cover-bold-h2-white">CREATIVE SPACE</p>
       </a>
     </div>
 

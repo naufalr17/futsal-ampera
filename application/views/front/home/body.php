@@ -6,6 +6,7 @@
 	<?php $this->load->view('front/home/slider'); ?>
 	<?php $this->load->view('front/home/about'); ?>
 	<?php $this->load->view('front/home/lapangan_new'); ?>
+	<?php $this->load->view('front/home/jadwal_booking'); ?>
 	<!-- <?php //$this->load->view('front/home/event_new'); ?> -->
 </div>
 

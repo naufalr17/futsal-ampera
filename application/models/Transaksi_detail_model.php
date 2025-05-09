@@ -19,4 +19,9 @@ class Transaksi_detail_model extends CI_Model{
 		//
 		// return $query->result();
 	}
+
+	public function get_all()
+    {
+        return $this->db->get('transaksi_detail')->result(); // Adjust table name if needed
+    }
 }
