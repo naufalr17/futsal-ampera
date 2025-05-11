@@ -279,3 +279,12 @@ a:active {
 .red-backgound {
     background-color: #FF0000;
 }
+
+.calendar{
+    font-family: "plus-jakarta-sans", sans-serif;
+    padding: 16px;
+}
+
+.invoice-finished {
+    color: cadetblue;
+}

@@ -242,7 +242,12 @@
 						$("#subtotal_bawah").html(numberWithCommas(subtotal_bawah));
 						$("#diskon").html(numberWithCommas(disc));
 						var gtotal = (subtotal_bawah - disc);
-						$("#grandtotal").html(numberWithCommas(gtotal));
+						if (gtotal < 0) {
+							grand_total = 0;
+						} else {
+							grand_total = gtotal;
+						}
+						$("#grandtotal").html(numberWithCommas(grand_total));
 					}
 				});
 			});

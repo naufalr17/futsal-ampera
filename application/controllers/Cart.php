@@ -222,13 +222,18 @@ class Cart extends CI_Controller
 		$query = $this->db->get('transaksi')->row();
 
 		$gtotal = $query->total - $diskon;
+		if ($gtotal < 0) {
+			$grand_total = 0;
+		} else {
+			$grand_total = $gtotal;
+		}
 
 		$this->db->where('id_trans', $this->input->post('id_trans'));
 		$this->db->where('user_id', $this->session->userdata('user_id'));
 		$this->db->update('transaksi', array(
 			'subtotal'		=>	$query->total,
 			'diskon'			=>	$diskon,
-			'grand_total'	=>	$gtotal,
+			'grand_total'	=>	$grand_total,
 			'deadline'		=>	date('Y-m-d H:i:s', strtotime('1 hour')),
 			'catatan'     => $this->input->post('catatan'),
 			'status'			=>	'1',

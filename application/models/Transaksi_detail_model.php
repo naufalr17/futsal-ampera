@@ -24,9 +24,11 @@ class Transaksi_detail_model extends CI_Model
 
 	public function get_all()
 	{
-		$this->db->select('transaksi_detail.*, transaksi.status');
+		$this->db->select('transaksi_detail.*, transaksi.status, transaksi.user_id, users.username, lapangan.nama_lapangan');
 		$this->db->from('transaksi_detail');
 		$this->db->join('transaksi', 'transaksi.id_trans = transaksi_detail.trans_id');
+		$this->db->join('lapangan', 'lapangan.id_lapangan = transaksi_detail.lapangan_id');
+		$this->db->join('users', 'users.id = transaksi.user_id');
 		$this->db->where('transaksi.status', '2'); // Filter for status 2
 		$query = $this->db->get();
 

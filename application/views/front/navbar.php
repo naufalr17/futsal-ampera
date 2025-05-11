@@ -37,9 +37,9 @@
             </li>
           </ul>
         </li> -->
-        <li class="<?php if($this->uri->segment(1) == "cart" && $this->uri->segment(2) == ""){echo "active";} ?>">
+        <!-- <li class="<?php if($this->uri->segment(1) == "cart" && $this->uri->segment(2) == ""){echo "active";} ?>">
           <a href="<?php echo base_url('cart') ?>"> Booking</a>
-        </li>
+        </li> -->
       </ul>
 
       <?php if($this->session->userdata('usertype') != NULL){ ?>

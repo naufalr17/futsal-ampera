@@ -38,8 +38,10 @@ class Jadwal extends CI_Controller
                 $end = $start;
             }
 
+            $title = $detail->nama_lapangan . ' - ' . $detail->username;
+
             $events[] = [
-                'title' => 'Transaksi',
+                'title' => $title,
                 'start' => $start,
                 'end'   => $end,
             ];

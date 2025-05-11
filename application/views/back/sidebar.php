@@ -27,10 +27,10 @@
         </a>
       </li>
       <li <?php if($this->uri->segment(2) == "lapangan"){echo "class='active'";} ?>>
-        <a href='#'><i class='fa fa-list'></i><span> Lapangan </span><i class='fa fa-angle-left pull-right'></i></a>
+        <a href='#'><i class='fa fa-list'></i><span> Fasilitas </span><i class='fa fa-angle-left pull-right'></i></a>
         <ul class='treeview-menu'>
-          <li <?php if($this->uri->segment(2) == "lapangan" && $this->uri->segment(3) == "create"){echo "class='active'";} ?>><a href='<?php echo base_url('admin/lapangan/create') ?>'><i class='fa fa-circle-o'></i> Tambah Lapangan </a></li>
-          <li <?php if($this->uri->segment(2) == "lapangan" && $this->uri->segment(3) == ""){echo "class='active'";} ?>><a href='<?php echo base_url('admin/lapangan') ?>'><i class='fa fa-circle-o'></i> Data Lapangan </a></li>
+          <li <?php if($this->uri->segment(2) == "lapangan" && $this->uri->segment(3) == "create"){echo "class='active'";} ?>><a href='<?php echo base_url('admin/lapangan/create') ?>'><i class='fa fa-circle-o'></i> Tambah Fasilitas </a></li>
+          <li <?php if($this->uri->segment(2) == "lapangan" && $this->uri->segment(3) == ""){echo "class='active'";} ?>><a href='<?php echo base_url('admin/lapangan') ?>'><i class='fa fa-circle-o'></i> Data Fasilitas </a></li>
         </ul>
       </li>
       <li <?php if($this->uri->segment(2) == "album"){echo "class='active'";} ?>>
